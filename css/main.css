@@ -10,7 +10,6 @@
 /* responsive CSS
 /* makes sure that padding and borders are included in total widht and height of elements*/
 
-
 html {
     color: #5bc0de;
     font-size: 1em;
@@ -245,16 +244,9 @@ body {
 
 }
 
-
-
-
 @media (min-width: 768px) {
 
-
     /* For desktop: */
-
-
-
     /* Navbar positioning foo */
     .navbar-wrapper {
         margin-top: 20px;
@@ -298,9 +290,6 @@ body {
         margin-left: 40px;
         margin-right: 40px;
     }
-
-
-
 
 }
 

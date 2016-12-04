@@ -5,8 +5,10 @@
 function validate() {
     var messages = []; // an array to store the messages of invalid input
     var counter = 5; //counter that keeps track of the possible attempts
+    //storing the content from the input fields
     var username = document.getElementById("name").value;
     var password = document.getElementById("password").value;
+    //the following is done so that there is one acceptable profile
     if (username == "UserStudent" && password == "Password00") {
         alert("User name and password are correct, the home page will be shown");
         window.location = "index.html";
@@ -15,6 +17,7 @@ function validate() {
     else {
         counter--;
         alert("You can try " + counter + " more times.");
+        //if the login attempts cannot be more than 5, when counter=5 the fields are disabled, thus nothing can be written there
         if (counter == 0) {
             document.getElementById("name").disabled = true;
             document.getElementById("password").disabled = true;

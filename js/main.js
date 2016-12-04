@@ -17,7 +17,7 @@ function main() {
     $("#conf_password").focus(function () {
         $(this).css("outline-color", "#000000");
     });
-  //focus on My To Do list input
+    //focus on My To Do list input
     $("#todoitem").focus(function () {
         $(this).css("outline-color", "#000000");
     });
@@ -29,11 +29,7 @@ function main() {
     }, 6000, function () {
         $(".image").show({duration: 6000});
     });
-    /*   $(".btn-default").hover(function(){
-     $(this).css("background-color", "black");
-     }, function(){
-     $(this).css("background-color", "#f1f1f2");
-     });*/
+
     // the below functions add class "active" when the mouse hovers on the navbar
     $(".home").hover(function () {
         $(this).addClass("active");

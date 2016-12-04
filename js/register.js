@@ -5,6 +5,7 @@
 
 function validate() {
     var messages = [];// an array to store the messages of invalid input
+    //storing the content from the input fields
     var username = document.getElementById("name").value;
     var password = document.getElementById("reg_password").value;
     var confirm_password=document.getElementById("conf_password").value;
