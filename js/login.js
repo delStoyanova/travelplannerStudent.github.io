@@ -2,10 +2,10 @@
  * Created by Delyana on 26.11.2016 .
  */
 
+var counter = 5; //counter that keeps track of the possible attempts
 function validate() {
-    var messages = []; // an array to store the messages of invalid input
-    var counter = 5; //counter that keeps track of the possible attempts
-    //storing the content from the input fields
+       var messages = []; // an array to store the messages of invalid input
+     //storing the content from the input fields
     var username = document.getElementById("name").value;
     var password = document.getElementById("password").value;
     //the following is done so that there is one acceptable profile
@@ -17,7 +17,7 @@ function validate() {
     else {
         counter--;
         alert("You can try " + counter + " more times.");
-        //if the login attempts cannot be more than 5, when counter=5 the fields are disabled, thus nothing can be written there
+        //if the login attempts cannot be more than 5, when counter=0 the fields are disabled, thus nothing can be written there
         if (counter == 0) {
             document.getElementById("name").disabled = true;
             document.getElementById("password").disabled = true;
@@ -47,15 +47,7 @@ function validate() {
     }
 
 }
-/*$(document).ready(main);
- function main(){
- $("#psw").on("click",function(){
- $(this).effect('bounce', 500);
- });
 
-
-
- }*/
 
 
 
